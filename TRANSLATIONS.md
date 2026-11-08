@@ -43,7 +43,7 @@ npm ci
 npm run build
 ```
 
-Alternatively, use the root `Dockerfile` / the GitHub Actions Docker workflow. The workflow builds an `edge` image on pushes to `main` for your fork (and a `latest` release image on a version tag). See `FORK-UND-KOMODO.md`.
+Alternatively, use the root `Dockerfile` / the GitHub Actions Docker workflow. The workflow builds an `edge` image on pushes to `main` for your fork (and a `latest` release image on a version tag).
 
 ## Security
 
