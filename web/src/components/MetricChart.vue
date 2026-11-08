@@ -43,7 +43,6 @@ const props = withDefaults(defineProps<{
 }>(), {
   type: 'line',
   categories: undefined,
-  format: (v: number) => v.toLocaleString(localeForDate(), { maximumFractionDigits: 2 }),
   yMax: undefined,
   height: 200,
   emptyText: '暂无数据'
@@ -89,7 +88,7 @@ function buildOption(): EChartsCoreOption {
   const borderDefault = cssVar('--border-default')
   const surface = cssVar('--bg-elevated')
   const mono = cssVar('--font-mono')
-  const fmt = props.format
+  const fmt = props.format ?? ((v: number) => v.toLocaleString(localeForDate(), { maximumFractionDigits: 2 }))
 
   const isCategory = !!props.categories
   // 跨度超过一天时，时间轴标签带上日期，否则 00:00 之后的点看不出是哪天。
