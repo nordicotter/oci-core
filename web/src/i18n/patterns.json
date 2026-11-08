@@ -1,0 +1,1112 @@
+[
+  {
+    "source": "请求失败（HTTP {0}）",
+    "de": "Anfrage fehlgeschlagen (HTTP {0})",
+    "en": "Request failed (HTTP {0})"
+  },
+  {
+    "source": "{0} 个账号",
+    "de": "{0} Konten",
+    "en": "{0} accounts"
+  },
+  {
+    "source": "{0} 个区域",
+    "de": "{0} Regionen",
+    "en": "{0} regions"
+  },
+  {
+    "source": "该账号 ARM 配额不限，当前已用 {0} OCPU / {1} GB",
+    "de": "Unbegrenztes ARM-Kontingent; derzeit {0} OCPUs / {1} GB verbraucht",
+    "en": "Unlimited ARM quota; currently using {0} OCPUs / {1} GB"
+  },
+  {
+    "source": "账号剩余配额 {0} OCPU / {1} GB",
+    "de": "Verbleibendes Kontingent: {0} OCPUs / {1} GB",
+    "en": "Remaining account quota: {0} OCPUs / {1} GB"
+  },
+  {
+    "source": "扩容后共 {0} GB，超出永久免费额度 {1} GB 共 {2} GB，试用期结束后超出部分不再免费。",
+    "de": "Nach Erweiterung {0} GB insgesamt; Always-Free-Limit {1} GB um {2} GB überschritten. Nach Ende des Testzeitraums ist der Überschuss kostenpflichtig.",
+    "en": "After expansion: {0} GB total; exceeds the Always Free limit of {1} GB by {2} GB. Excess usage is no longer free after the trial."
+  },
+  {
+    "source": "扩容后共 {0} GB，超出永久免费额度 {1} GB 共 {2} GB，超出部分按量计费。",
+    "de": "Nach Erweiterung {0} GB insgesamt; Always-Free-Limit {1} GB um {2} GB überschritten. Der Überschuss wird abgerechnet.",
+    "en": "After expansion: {0} GB total; exceeds the Always Free limit of {1} GB by {2} GB. Excess usage will be billed."
+  },
+  {
+    "source": "修改 {0} 的引导卷",
+    "de": "Boot-Volume von {0} ändern",
+    "en": "Modify {0}'s boot volume"
+  },
+  {
+    "source": "从 {0} GB 扩到 {1} GB。容量只能增不能减，扩容后还需要在实例内扩展分区与文件系统才会生效。",
+    "de": "Von {0} GB auf {1} GB erweitern. Volumes lassen sich nicht verkleinern; danach Partition und Dateisystem in der Instanz vergrößern.",
+    "en": "Expand from {0} GB to {1} GB. Volumes cannot be shrunk; expand the partition and filesystem inside the instance afterward."
+  },
+  {
+    "source": "将 VPU 从 {0} 调整为 {1}。性能档位变更会在后台生效，无需重启。",
+    "de": "VPU von {0} auf {1} ändern. Die Leistungsänderung wird im Hintergrund ohne Neustart übernommen.",
+    "en": "Change VPU from {0} to {1}. Performance changes take effect in the background without reboot."
+  },
+  {
+    "source": "{0} 的引导卷已更新",
+    "de": "Boot-Volume von {0} aktualisiert",
+    "en": "Boot volume of {0} updated"
+  },
+  {
+    "source": "修改 {0} 的配置",
+    "de": "Konfiguration von {0} ändern",
+    "en": "Change configuration of {0}"
+  },
+  {
+    "source": "{0} GB · VPU {1} · 容量只能增不能减",
+    "de": "{0} GB · VPU {1} · Vergrößern möglich, Verkleinern nicht",
+    "en": "{0} GB · VPU {1} · can grow, cannot shrink"
+  },
+  {
+    "source": "{0} 约束：每 OCPU 最多 {1} GB",
+    "de": "{0}: maximal {1} GB je OCPU",
+    "en": "{0}: maximum {1} GB per OCPU"
+  },
+  {
+    "source": "{0} 上移",
+    "de": "{0} nach oben",
+    "en": "Move {0} up"
+  },
+  {
+    "source": "{0} 下移",
+    "de": "{0} nach unten",
+    "en": "Move {0} down"
+  },
+  {
+    "source": "文件有 {0} KB，不像是私钥，请确认选对了文件",
+    "de": "Datei ist {0} KB groß – ungewöhnlich für einen Privatschlüssel. Bitte die Datei prüfen.",
+    "en": "File is {0} KB, which is unusual for a private key. Check the selected file."
+  },
+  {
+    "source": "强制重启 {0}",
+    "de": "Harter Neustart von {0}",
+    "en": "Force restart {0}"
+  },
+  {
+    "source": "更换 {0} 的公网 IP",
+    "de": "Öffentliche IP von {0} wechseln",
+    "en": "Change public IP of {0}"
+  },
+  {
+    "source": "更换后原 IP {0} 不可找回，当前 SSH 连接将中断，DNS 记录需要手动更新。",
+    "de": "Die bisherige IP {0} ist nach dem Wechsel verloren. Aktive SSH-Verbindungen brechen ab; DNS-Einträge müssen manuell angepasst werden.",
+    "en": "The old IP {0} cannot be recovered after replacement. Active SSH sessions will disconnect; DNS records need manual updates."
+  },
+  {
+    "source": "终止实例 {0}",
+    "de": "Instanz {0} beenden",
+    "en": "Terminate instance {0}"
+  },
+  {
+    "source": "{0}-boot（{1} GB 引导卷）",
+    "de": "{0}-boot ({1} GB Boot-Volume)",
+    "en": "{0}-boot ({1} GB boot volume)"
+  },
+  {
+    "source": "临时公网 IP {0}",
+    "de": "Temporäre öffentliche IP {0}",
+    "en": "Temporary public IP {0}"
+  },
+  {
+    "source": "复制 SSH 命令（{0}@）",
+    "de": "SSH-Befehl kopieren ({0}@)",
+    "en": "Copy SSH command ({0}@)"
+  },
+  {
+    "source": "演示站不支持{0}。下载部署后即可使用完整功能。",
+    "de": "Die Demo unterstützt {0} nicht. Nach der Installation stehen alle Funktionen zur Verfügung.",
+    "en": "The demo does not support {0}. Deploy your own instance for full functionality."
+  },
+  {
+    "source": "删除账号需要在 confirm 参数中回传账号别名 \"{0}\"",
+    "de": "Zum Entfernen des Kontos seinen Alias „{0}“ als confirm-Parameter übergeben",
+    "en": "To remove the account, pass its alias \"{0}\" in the confirm parameter"
+  },
+  {
+    "source": "{0} 天",
+    "de": "{0} Tage",
+    "en": "{0} days"
+  },
+  {
+    "source": "删除卷不可恢复，需要在 confirm 参数中回传卷名 \"{0}\"",
+    "de": "Das Löschen ist unwiderruflich. Den Volume-Namen „{0}“ als confirm-Parameter übergeben",
+    "en": "Deletion is irreversible. Pass volume name \"{0}\" as the confirm parameter"
+  },
+  {
+    "source": "{0} 已提交删除，几分钟内从列表消失。",
+    "de": "{0} wurde zum Löschen vorgemerkt und verschwindet in wenigen Minuten aus der Liste.",
+    "en": "{0} submitted for deletion and will disappear in a few minutes."
+  },
+  {
+    "source": "需要在 confirm 参数中回传 IP 地址 \"{0}\"",
+    "de": "IP-Adresse „{0}“ im confirm-Parameter übergeben",
+    "en": "Pass IP address \"{0}\" in the confirm parameter"
+  },
+  {
+    "source": "{0} 个账号 · {1} 台实例",
+    "de": "{0} Konten · {1} Instanzen",
+    "en": "{0} accounts · {1} instances"
+  },
+  {
+    "source": "已改为 {0} OCPU / {1} GB",
+    "de": "Geändert auf {0} OCPUs / {1} GB",
+    "en": "Changed to {0} OCPUs / {1} GB"
+  },
+  {
+    "source": "终止实例需要在 confirm 参数中回传实例名称 \"{0}\"",
+    "de": "Zum Beenden der Instanz den Namen „{0}“ im confirm-Parameter übergeben",
+    "en": "To terminate the instance, pass name \"{0}\" in the confirm parameter"
+  },
+  {
+    "source": "批量操作 · {0} 台",
+    "de": "Massenaktion · {0} Instanzen",
+    "en": "Bulk operation · {0} instances"
+  },
+  {
+    "source": "{0} 台实例",
+    "de": "{0} Instanzen",
+    "en": "{0} instances"
+  },
+  {
+    "source": "已提交 {0} 台",
+    "de": "{0} Instanzen übermittelt",
+    "en": "Submitted {0} instances"
+  },
+  {
+    "source": "{0} 已创建",
+    "de": "{0} erstellt",
+    "en": "{0} created"
+  },
+  {
+    "source": "{0} 分钟前",
+    "de": "vor {0} Minuten",
+    "en": "{0} minutes ago"
+  },
+  {
+    "source": "{0} 小时前",
+    "de": "vor {0} Stunden",
+    "en": "{0} hours ago"
+  },
+  {
+    "source": "{0} 天前",
+    "de": "vor {0} Tagen",
+    "en": "{0} days ago"
+  },
+  {
+    "source": "{0}分钟",
+    "de": "{0} Min.",
+    "en": "{0} min"
+  },
+  {
+    "source": "{0}小时{1}分",
+    "de": "{0} Std. {1} Min.",
+    "en": "{0} hr {1} min"
+  },
+  {
+    "source": "{0}天{1}小时",
+    "de": "{0} Tg. {1} Std.",
+    "en": "{0} d {1} hr"
+  },
+  {
+    "source": "{0}校验失败：{1}",
+    "de": "{0}: Prüfung fehlgeschlagen – {1}",
+    "en": "{0}: validation failed — {1}"
+  },
+  {
+    "source": "{0}校验失败",
+    "de": "{0}: Prüfung fehlgeschlagen",
+    "en": "{0}: validation failed"
+  },
+  {
+    "source": "{0}校验通过",
+    "de": "{0}: Prüfung erfolgreich",
+    "en": "{0}: validation passed"
+  },
+  {
+    "source": "已创建 {0} 天",
+    "de": "Vor {0} Tagen erstellt",
+    "en": "Created {0} days ago"
+  },
+  {
+    "source": "已创建 {0} 个月",
+    "de": "Vor {0} Monaten erstellt",
+    "en": "Created {0} months ago"
+  },
+  {
+    "source": "已创建 {0} 年 {1} 个月",
+    "de": "Vor {0} Jahr(en) und {1} Monat(en) erstellt",
+    "en": "Created {0} years and {1} months ago"
+  },
+  {
+    "source": "已创建 {0} 年",
+    "de": "Vor {0} Jahren erstellt",
+    "en": "Created {0} years ago"
+  },
+  {
+    "source": "{0} 已更换公网 IP",
+    "de": "Öffentliche IP von {0} gewechselt",
+    "en": "Public IP changed for {0}"
+  },
+  {
+    "source": "{0} → {1}\n新旧 IP 已记入「设置 → 审计日志」。",
+    "de": "{0} → {1}\nAlte und neue IP wurden unter „Einstellungen → Audit-Protokoll“ vermerkt.",
+    "en": "{0} → {1}\nOld and new IP recorded under Settings → Audit Log."
+  },
+  {
+    "source": "同步完成，{0} 个区域失败",
+    "de": "Synchronisierung abgeschlossen; {0} Regionen fehlgeschlagen",
+    "en": "Sync complete; {0} regions failed"
+  },
+  {
+    "source": "已转入后台：{0}",
+    "de": "Im Hintergrund fortgesetzt: {0}",
+    "en": "Moved to background: {0}"
+  },
+  {
+    "source": "已取消：{0}",
+    "de": "Abgebrochen: {0}",
+    "en": "Cancelled: {0}"
+  },
+  {
+    "source": "{0} 失败",
+    "de": "{0} fehlgeschlagen",
+    "en": "{0} failed"
+  },
+  {
+    "source": "{0} 完成",
+    "de": "{0} abgeschlossen",
+    "en": "{0} completed"
+  },
+  {
+    "source": "账号 {0} 凭据校验失败",
+    "de": "Zugangsdatenprüfung für Konto {0} fehlgeschlagen",
+    "en": "Credential validation failed for account {0}"
+  },
+  {
+    "source": "{0} 已终止",
+    "de": "{0} beendet",
+    "en": "{0} terminated"
+  },
+  {
+    "source": "{0} 操作失败",
+    "de": "Aktion für {0} fehlgeschlagen",
+    "en": "Operation failed for {0}"
+  },
+  {
+    "source": "{0} 的附属网卡已挂载",
+    "de": "Zusätzliche VNIC von {0} angeschlossen",
+    "en": "Secondary VNIC for {0} attached"
+  },
+  {
+    "source": "{0} 的附属网卡已分离",
+    "de": "Zusätzliche VNIC von {0} getrennt",
+    "en": "Secondary VNIC for {0} detached"
+  },
+  {
+    "source": "{0} 的附属网卡挂载失败",
+    "de": "Zusätzliche VNIC von {0} konnte nicht angeschlossen werden",
+    "en": "Failed to attach secondary VNIC for {0}"
+  },
+  {
+    "source": "{0} 已就绪",
+    "de": "{0} bereit",
+    "en": "{0} ready"
+  },
+  {
+    "source": "公网 IP {0}",
+    "de": "Öffentliche IP {0}",
+    "en": "Public IP {0}"
+  },
+  {
+    "source": "{0} 终止失败",
+    "de": "{0} konnte nicht beendet werden",
+    "en": "Failed to terminate {0}"
+  },
+  {
+    "source": "试用 {0} 天后到期",
+    "de": "Testphase endet in {0} Tagen",
+    "en": "Trial ends in {0} days"
+  },
+  {
+    "source": "{0} 个 Oracle 租户 · {1} 个认证失败 · {2} 个已禁用",
+    "de": "{0} Oracle-Mandanten · {1} Authentifizierungsfehler · {2} deaktiviert",
+    "en": "{0} Oracle tenancies · {1} authentication failures · {2} disabled"
+  },
+  {
+    "source": "{0} 个账号读不到用量数据",
+    "de": "Für {0} Konten sind keine Nutzungsdaten lesbar",
+    "en": "Cannot read usage data for {0} accounts"
+  },
+  {
+    "source": "明细 · {0}",
+    "de": "Details · {0}",
+    "en": "Details · {0}"
+  },
+  {
+    "source": "{0} 至今 · {1}",
+    "de": "{0} bis heute · {1}",
+    "en": "{0} to date · {1}"
+  },
+  {
+    "source": "{0} 天每日费用趋势，峰值 {1}",
+    "de": "Tägliche Kosten über {0} Tage; Höchstwert {1}",
+    "en": "Daily cost trend over {0} days, peak {1}"
+  },
+  {
+    "source": "删除监控「{0} · {1}」",
+    "de": "Überwachung „{0} · {1}“ löschen",
+    "en": "Delete monitor “{0} · {1}”"
+  },
+  {
+    "source": "每 {0} 分钟复查一次 · 状态变化时才推通知",
+    "de": "Alle {0} Minuten prüfen · Nur bei Statuswechsel benachrichtigen",
+    "en": "Recheck every {0} minutes · Notify only on status changes"
+  },
+  {
+    "source": "{0} 秒后",
+    "de": "In {0} Sekunden",
+    "en": "In {0} seconds"
+  },
+  {
+    "source": "{0} 分 {1} 秒后",
+    "de": "In {0} Min. {1} Sek.",
+    "en": "In {0} min {1} sec"
+  },
+  {
+    "source": "{0} 小时 {1} 分后",
+    "de": "In {0} Std. {1} Min.",
+    "en": "In {0} hr {1} min"
+  },
+  {
+    "source": "{0} 小时后到期",
+    "de": "Läuft in {0} Stunden ab",
+    "en": "Expires in {0} hours"
+  },
+  {
+    "source": "{0} 天后到期",
+    "de": "Läuft in {0} Tagen ab",
+    "en": "Expires in {0} days"
+  },
+  {
+    "source": "删除守候任务「{0}」",
+    "de": "Capacity-Hunter-Auftrag „{0}“ löschen",
+    "en": "Delete hunting job “{0}”"
+  },
+  {
+    "source": "高频调用创建接口轻则限流，重则账号被标记。间隔硬下限 {0} 秒，不可放开。",
+    "de": "Zu viele Erstellungsanfragen führen zu API-Drosselung oder Kontomarkierung. Der Mindestabstand von {0} Sekunden ist fest vorgegeben.",
+    "en": "Frequent create requests may cause rate limits or account flagging. The minimum interval of {0} seconds cannot be reduced."
+  },
+  {
+    "source": "跨 {0} 个账号聚合",
+    "de": "Über {0} Konten zusammengefasst",
+    "en": "Aggregated across {0} accounts"
+  },
+  {
+    "source": "{0} · 共 {1} 台",
+    "de": "{0} · {1} Instanzen insgesamt",
+    "en": "{0} · {1} instances total"
+  },
+  {
+    "source": "按{0}排序",
+    "de": "Nach {0} sortieren",
+    "en": "Sort by {0}"
+  },
+  {
+    "source": "调整{0}列宽",
+    "de": "Spaltenbreite von {0} ändern",
+    "en": "Resize {0} column"
+  },
+  {
+    "source": "选择 {0}",
+    "de": "{0} auswählen",
+    "en": "Select {0}"
+  },
+  {
+    "source": "{0} 秒",
+    "de": "{0} Sek.",
+    "en": "{0} sec"
+  },
+  {
+    "source": "{0} 分 {1} 秒",
+    "de": "{0} Min. {1} Sek.",
+    "en": "{0} min {1} sec"
+  },
+  {
+    "source": "将从列表中移除 {0} 条已结束的任务。操作本身已记在审计日志里，不受影响。",
+    "de": "{0} abgeschlossene Aufträge werden aus der Liste entfernt. Bereits erfasste Audit-Einträge bleiben bestehen.",
+    "en": "Remove {0} finished jobs from the list. Existing audit entries remain intact."
+  },
+  {
+    "source": "第 {0} 位",
+    "de": "Ziffer {0}",
+    "en": "Digit {0}"
+  },
+  {
+    "source": "追加到 {0} · {1} · {2}",
+    "de": "Zu {0} · {1} · {2} hinzufügen",
+    "en": "Append to {0} · {1} · {2}"
+  },
+  {
+    "source": "已追加 {0} 规则",
+    "de": "{0} Regeln hinzugefügt",
+    "en": "Added {0} rules"
+  },
+  {
+    "source": "IPv4 每段取值 0–255，{0} 超出范围",
+    "de": "IPv4-Blöcke müssen zwischen 0 und 255 liegen; {0} ist ungültig",
+    "en": "IPv4 octets must be 0–255; {0} is out of range"
+  },
+  {
+    "source": "{0}。来源是 {1} 且覆盖全部端口，任何人都可以尝试连接。",
+    "de": "{0}. Quelle {1}, alle Ports offen: Jeder kann eine Verbindung versuchen.",
+    "en": "{0}. Source {1}, all ports exposed: anyone can attempt to connect."
+  },
+  {
+    "source": "{0} {1} {2} {3} —— 删除后依赖该规则的连接会立即中断。",
+    "de": "{0} {1} {2} {3} – Verbindungen, die auf diese Regel angewiesen sind, brechen nach dem Löschen sofort ab.",
+    "en": "{0} {1} {2} {3} — deleting this rule immediately interrupts connections that rely on it."
+  },
+  {
+    "source": "更换公网 IP {0}",
+    "de": "Öffentliche IP von {0} wechseln",
+    "en": "Change public IP for {0}"
+  },
+  {
+    "source": "更换后原 IP 不可找回，{0} 的 SSH 连接将中断，DNS 记录需要手动更新。",
+    "de": "Die bisherige IP ist danach verloren. SSH-Verbindungen zu {0} brechen ab; DNS-Einträge müssen manuell aktualisiert werden.",
+    "en": "The old IP will be lost. SSH sessions to {0} will disconnect and DNS records need manual updates."
+  },
+  {
+    "source": "删除渠道 {0}",
+    "de": "Kanal {0} löschen",
+    "en": "Delete channel {0}"
+  },
+  {
+    "source": "{0} 已删除",
+    "de": "{0} gelöscht",
+    "en": "{0} deleted"
+  },
+  {
+    "source": "{0} 测试已发送",
+    "de": "Testnachricht über {0} gesendet",
+    "en": "{0} test sent"
+  },
+  {
+    "source": "{0} 测试失败",
+    "de": "Test über {0} fehlgeschlagen",
+    "en": "{0} test failed"
+  },
+  {
+    "source": "{0} 认证失败",
+    "de": "{0} Authentifizierungsfehler",
+    "en": "{0} authentication failures"
+  },
+  {
+    "source": "{0} 已禁用",
+    "de": "{0} deaktiviert",
+    "en": "{0} disabled"
+  },
+  {
+    "source": "上次同步实例 {0}",
+    "de": "Instanzen zuletzt synchronisiert: {0}",
+    "en": "Last instance sync: {0}"
+  },
+  {
+    "source": "{0} 已停止",
+    "de": "{0} gestoppt",
+    "en": "{0} stopped"
+  },
+  {
+    "source": "{0} 凭据失效：NotAuthenticated —— 密钥可能已在 Oracle 控制台被删除",
+    "de": "{0}: Zugangsdaten ungültig (NotAuthenticated) – Schlüssel möglicherweise in der Oracle-Konsole gelöscht",
+    "en": "{0}: credentials invalid (NotAuthenticated) — key may have been deleted in the Oracle console"
+  },
+  {
+    "source": "{0} 上次操作失败{1}",
+    "de": "{0}: Letzte Aktion fehlgeschlagen {1}",
+    "en": "{0}: last operation failed {1}"
+  },
+  {
+    "source": "{0} 内存配额 {1} / {2} GB，已达 {3}%",
+    "de": "{0}: RAM-Kontingent {1} / {2} GB, {3} % verbraucht",
+    "en": "{0}: memory quota {1} / {2} GB, {3}% used"
+  },
+  {
+    "source": "{0} 引导卷 {1} / {2} GB，剩余 {3} GB",
+    "de": "{0}: Boot-Volumes {1} / {2} GB, noch {3} GB",
+    "en": "{0}: boot volumes {1} / {2} GB, {3} GB remaining"
+  },
+  {
+    "source": "{0} 分后",
+    "de": "In {0} Min.",
+    "en": "In {0} min"
+  },
+  {
+    "source": "{0} 小时后",
+    "de": "In {0} Std.",
+    "en": "In {0} hr"
+  },
+  {
+    "source": "{0} 个任务进行中",
+    "de": "{0} laufende Aufträge",
+    "en": "{0} jobs running"
+  },
+  {
+    "source": "按 ARM 用量排序，另有 {0} 个账号未列出",
+    "de": "Nach ARM-Verbrauch sortiert; {0} weitere Konten nicht angezeigt",
+    "en": "Sorted by ARM usage; {0} more accounts not shown"
+  },
+  {
+    "source": "导入完成：成功 {0} 条",
+    "de": "Import abgeschlossen: {0} erfolgreich",
+    "en": "Import complete: {0} successful"
+  },
+  {
+    "source": "跳过 {0} 条（已存在）",
+    "de": "{0} übersprungen (bereits vorhanden)",
+    "en": "{0} skipped (already exists)"
+  },
+  {
+    "source": "失败 {0} 条",
+    "de": "{0} fehlgeschlagen",
+    "en": "{0} failed"
+  },
+  {
+    "source": "检测完成：{0} / {1} 条可用",
+    "de": "Prüfung abgeschlossen: {0} / {1} erreichbar",
+    "en": "Check complete: {0} / {1} available"
+  },
+  {
+    "source": "删除代理「{0}」",
+    "de": "Proxy „{0}“ löschen",
+    "en": "Delete proxy “{0}”"
+  },
+  {
+    "source": "{0} 条",
+    "de": "{0} Einträge",
+    "en": "{0} entries"
+  },
+  {
+    "source": "最近一次成功：{0}",
+    "de": "Zuletzt erfolgreich: {0}",
+    "en": "Last successful: {0}"
+  },
+  {
+    "source": "{0} 的代理",
+    "de": "Proxy von {0}",
+    "en": "Proxy for {0}"
+  },
+  {
+    "source": "{0} 超出永久免费参考额度",
+    "de": "{0} über dem Always-Free-Referenzwert",
+    "en": "{0} exceeds the Always Free reference limit"
+  },
+  {
+    "source": "已用 {0}{1}，{2}参考额度 {3}{4}。{5}",
+    "de": "Verbraucht: {0}{1}; {2}Referenzwert: {3}{4}. {5}",
+    "en": "Used: {0}{1}; {2}reference allowance: {3}{4}. {5}"
+  },
+  {
+    "source": "{0} {1} 未挂载",
+    "de": "{0} {1} nicht angeschlossen",
+    "en": "{0} {1} unattached"
+  },
+  {
+    "source": "{0} GB · {1} · {2} · 创建于 {3}，仍计入存储额度",
+    "de": "{0} GB · {1} · {2} · erstellt am {3}, zählt weiter zum Speicherkontingent",
+    "en": "{0} GB · {1} · {2} · created on {3}; still counts against storage quota"
+  },
+  {
+    "source": "保留 IP {0} 未绑定",
+    "de": "Reservierte IP {0} nicht zugewiesen",
+    "en": "Reserved IP {0} unassigned"
+  },
+  {
+    "source": "{0}{1} · 未绑定的保留 IP 仍然占用配额",
+    "de": "{0}{1} · Nicht zugewiesene reservierte IPs zählen weiterhin zum Kontingent",
+    "en": "{0}{1} · Unassigned reserved IPs still consume quota"
+  },
+  {
+    "source": "控制台连接 · {0}",
+    "de": "Konsolenverbindung · {0}",
+    "en": "Console connection · {0}"
+  },
+  {
+    "source": "{0} · {1} · 一台实例同时只能有一条，用完建议删除",
+    "de": "{0} · {1} · Nur eine Verbindung pro Instanz gleichzeitig; nach Verwendung am besten löschen",
+    "en": "{0} · {1} · Only one connection per instance at a time; delete it when finished"
+  },
+  {
+    "source": "{0} · 其中的实例无法通过公网 IP 访问外网",
+    "de": "{0} · Instanzen darin können nicht über öffentliche IPs ins Internet",
+    "en": "{0} · Instances in it cannot reach the Internet via public IP"
+  },
+  {
+    "source": "删除{0} {1}",
+    "de": "{0} {1} löschen",
+    "en": "Delete {0} {1}"
+  },
+  {
+    "source": "{0} {1}（{2} GB）及其中的全部数据",
+    "de": "{0} {1} ({2} GB) und alle enthaltenen Daten",
+    "en": "{0} {1} ({2} GB) and all its data"
+  },
+  {
+    "source": "已删除{0} {1}",
+    "de": "{0} {1} gelöscht",
+    "en": "Deleted {0} {1}"
+  },
+  {
+    "source": "释放保留 IP {0}",
+    "de": "Reservierte IP {0} freigeben",
+    "en": "Release reserved IP {0}"
+  },
+  {
+    "source": "保留 IP {0}{1}",
+    "de": "Reservierte IP {0}{1}",
+    "en": "Reserved IP {0}{1}"
+  },
+  {
+    "source": "删除 {0} 的控制台连接",
+    "de": "Konsolenverbindung von {0} löschen",
+    "en": "Delete console connection for {0}"
+  },
+  {
+    "source": "{0} 块卷 · 合计 {1} GB",
+    "de": "{0} Volumes · zusammen {1} GB",
+    "en": "{0} volumes · {1} GB total"
+  },
+  {
+    "source": "{0} 个",
+    "de": "{0} Stück",
+    "en": "{0} items"
+  },
+  {
+    "source": "{0} 个 VCN",
+    "de": "{0} VCNs",
+    "en": "{0} VCNs"
+  },
+  {
+    "source": "主区域 {0}",
+    "de": "Heimatregion {0}",
+    "en": "Home region {0}"
+  },
+  {
+    "source": "{0} · 核对于 {1} · {2}合计",
+    "de": "{0} · abgeglichen am {1} · {2} insgesamt",
+    "en": "{0} · reconciled on {1} · {2} total"
+  },
+  {
+    "source": "{0} 项",
+    "de": "{0} Elemente",
+    "en": "{0} items"
+  },
+  {
+    "source": "每 {0} 分钟全量同步一次，状态变化走 SSE 实时推送",
+    "de": "Vollständiger Abgleich alle {0} Minuten; Statusänderungen kommen live per SSE",
+    "en": "Full sync every {0} minutes; state changes arrive live via SSE"
+  },
+  {
+    "source": "每 {0} 小时自动重跑一次连通性校验",
+    "de": "Verbindung wird alle {0} Stunden automatisch überprüft",
+    "en": "Connectivity is automatically rechecked every {0} hours"
+  },
+  {
+    "source": "已加载 {0} 条 · 只增不改",
+    "de": "{0} Einträge geladen · nur anhängen, keine Änderungen",
+    "en": "Loaded {0} entries · append-only"
+  },
+  {
+    "source": "共 {0} 条 · 只增不改",
+    "de": "{0} Einträge gesamt · nur anhängen, keine Änderungen",
+    "en": "{0} entries total · append-only"
+  },
+  {
+    "source": "已加载 {0} / 共 {1} 条 · 只增不改",
+    "de": "{0} von {1} Einträgen geladen · nur anhängen, keine Änderungen",
+    "en": "Loaded {0} / {1} entries · append-only"
+  },
+  {
+    "source": "审计日志只保留 {0} 天",
+    "de": "Audit-Protokoll nur {0} Tage aufbewahren",
+    "en": "Keep audit logs for only {0} days"
+  },
+  {
+    "source": "超过 {0} 天的审计记录会在下一次清理时被永久删除，无法恢复。",
+    "de": "Audit-Einträge älter als {0} Tage werden bei der nächsten Bereinigung unwiderruflich gelöscht.",
+    "en": "Audit records older than {0} days will be deleted permanently during the next cleanup."
+  },
+  {
+    "source": "设为 {0} 天",
+    "de": "Auf {0} Tage festlegen",
+    "en": "Set to {0} days"
+  },
+  {
+    "source": "加载更早的 {0} 条",
+    "de": "{0} ältere Einträge laden",
+    "en": "Load {0} older entries"
+  },
+  {
+    "source": "{0} 校验通过",
+    "de": "{0}: Prüfung erfolgreich",
+    "en": "{0}: validation passed"
+  },
+  {
+    "source": "已订阅 {0} 个区域",
+    "de": "{0} Regionen abonniert",
+    "en": "Subscribed to {0} regions"
+  },
+  {
+    "source": "轮换 {0} 的 API 密钥",
+    "de": "API-Schlüssel von {0} wechseln",
+    "en": "Rotate API key for {0}"
+  },
+  {
+    "source": "把密码有效期设为 {0} 天",
+    "de": "Passwortgültigkeit auf {0} Tage setzen",
+    "en": "Set password validity to {0} days"
+  },
+  {
+    "source": "这会修改账号「{0}」所在身份域的密码策略，",
+    "de": "Dies ändert die Passwortrichtlinie der Identitätsdomain von Konto „{0}“,",
+    "en": "This modifies the identity domain password policy for account “{0}”,"
+  },
+  {
+    "source": "试用号 · {0} 天后到期，届时配额降回永久免费额度 {1}",
+    "de": "Testkonto · läuft in {0} Tagen ab; danach sinkt das Kontingent auf Always Free {1}",
+    "en": "Trial account · expires in {0} days; quota drops to Always Free {1} afterward"
+  },
+  {
+    "source": "当前已用 {0} OCPU，超出永久免费额度 {1} OCPU。",
+    "de": "Derzeit {0} OCPUs verbraucht; {1} OCPUs über dem Always-Free-Kontingent.",
+    "en": "Currently using {0} OCPUs; {1} OCPUs above the Always Free allowance."
+  },
+  {
+    "source": "该账号下 {0} 台实例",
+    "de": "{0} Instanzen in diesem Konto",
+    "en": "{0} instances in this account"
+  },
+  {
+    "source": "删除账号 {0}",
+    "de": "Konto {0} löschen",
+    "en": "Delete account {0}"
+  },
+  {
+    "source": "该账号的 {0} 台实例在本工具中的聚合视图",
+    "de": "Zusammengefasste Ansicht der {0} Instanzen dieses Kontos",
+    "en": "Aggregated view of this account's {0} instances"
+  },
+  {
+    "source": "{0} 已从本工具移除",
+    "de": "{0} aus diesem Tool entfernt",
+    "en": "{0} removed from this tool"
+  },
+  {
+    "source": "{0} 台（运行 {1}）",
+    "de": "{0} Instanzen ({1} laufend)",
+    "en": "{0} instances ({1} running)"
+  },
+  {
+    "source": "{0} 已订阅 {1}",
+    "de": "{0} hat {1} abonniert",
+    "en": "{0} subscribed to {1}"
+  },
+  {
+    "source": "永久免费额度 {0}（{1} 起）",
+    "de": "Always-Free-Kontingent {0} (ab {1})",
+    "en": "Always Free allowance {0} (effective {1})"
+  },
+  {
+    "source": "身份域 {0}",
+    "de": "Identitätsdomain {0}",
+    "en": "Identity domain {0}"
+  },
+  {
+    "source": "读取失败：{0}",
+    "de": "Lesen fehlgeschlagen: {0}",
+    "en": "Read failed: {0}"
+  },
+  {
+    "source": "{0} 位",
+    "de": "{0} Stellen",
+    "en": "{0} digits"
+  },
+  {
+    "source": "已解析 {0} 个字段",
+    "de": "{0} Felder erkannt",
+    "en": "Parsed {0} fields"
+  },
+  {
+    "source": "仍缺少：{0}",
+    "de": "Noch fehlend: {0}",
+    "en": "Still missing: {0}"
+  },
+  {
+    "source": "{0} 已接入",
+    "de": "{0} verbunden",
+    "en": "{0} connected"
+  },
+  {
+    "source": "身份色与短代号 {0} 已绑定，正在同步实例列表",
+    "de": "Kontofarbe und Kürzel {0} gespeichert; Instanzliste wird synchronisiert",
+    "en": "Identity color and short code {0} assigned; syncing instance list"
+  },
+  {
+    "source": "{0} 小时",
+    "de": "{0} Stunden",
+    "en": "{0} hours"
+  },
+  {
+    "source": "{0} 个月左右",
+    "de": "Etwa {0} Monate",
+    "en": "About {0} months"
+  },
+  {
+    "source": "低于硬下限，提交后会被抬到 {0} 秒",
+    "de": "Unter dem Mindestwert; beim Absenden wird auf {0} Sekunden angehoben",
+    "en": "Below the minimum; raised to {0} seconds on submission"
+  },
+  {
+    "source": "弹性 {0}–{1} OCPU",
+    "de": "Flexibel {0}–{1} OCPUs",
+    "en": "Flexible {0}–{1} OCPUs"
+  },
+  {
+    "source": "查询可用域失败：{0}",
+    "de": "Abfrage der Availability Domains fehlgeschlagen: {0}",
+    "en": "Failed to query availability domains: {0}"
+  },
+  {
+    "source": "查询规格失败：{0}",
+    "de": "Abfrage der Instanztypen fehlgeschlagen: {0}",
+    "en": "Failed to query shapes: {0}"
+  },
+  {
+    "source": "查询镜像失败：{0}",
+    "de": "Abfrage der Images fehlgeschlagen: {0}",
+    "en": "Failed to query images: {0}"
+  },
+  {
+    "source": "子网 {0} 禁止分配公网 IP。请改选其他子网，或关掉「分配公网 IPv4」。",
+    "de": "Subnetz {0} verbietet öffentliche IPs. Anderes Subnetz wählen oder „Öffentliche IPv4 zuweisen“ deaktivieren.",
+    "en": "Subnet {0} disallows public IPs. Choose another subnet or disable “Assign public IPv4”."
+  },
+  {
+    "source": "你设置的间隔是 {0} 秒，低于建议的 {1} 秒。",
+    "de": "Das eingestellte Intervall von {0} Sekunden liegt unter der Empfehlung von {1} Sekunden.",
+    "en": "Your interval of {0} seconds is below the recommended {1} seconds."
+  },
+  {
+    "source": "任务会每 {0} 秒尝试创建一次 {1}，",
+    "de": "Der Auftrag versucht alle {0} Sekunden, eine Instanz vom Typ {1} zu erstellen,",
+    "en": "The job will attempt to create a {1} instance every {0} seconds,"
+  },
+  {
+    "source": "直到抢到、或 {0}后到期。",
+    "de": "bis es klappt oder der Auftrag nach {0} abläuft.",
+    "en": "until successful or the job expires after {0}."
+  },
+  {
+    "source": "期间会持续调用该账号的 Oracle 接口。{0}",
+    "de": "Dabei wird die Oracle-API dieses Kontos fortlaufend aufgerufen. {0}",
+    "en": "This continuously calls the Oracle API for this account. {0}"
+  },
+  {
+    "source": "剩余 {0} OCPU / {1} GB",
+    "de": "Noch {0} OCPUs / {1} GB frei",
+    "en": "{0} OCPUs / {1} GB remaining"
+  },
+  {
+    "source": "已按 {0} 实际提供的规格过滤",
+    "de": "Nach tatsächlich verfügbaren Instanztypen in {0} gefiltert",
+    "en": "Filtered to shapes actually available in {0}"
+  },
+  {
+    "source": "{0} 在 {1} 不提供",
+    "de": "{0} ist in {1} nicht verfügbar",
+    "en": "{0} is not offered in {1}"
+  },
+  {
+    "source": "{0} 不在永久免费额度内，创建后按量计费（试用号先扣试用金）。",
+    "de": "{0} gehört nicht zum Always-Free-Kontingent. Nach Erstellung fallen nutzungsabhängige Kosten an (im Testzeitraum zunächst aus dem Testguthaben).",
+    "en": "{0} is not Always Free. Usage is billed after creation (against trial credit during the trial)."
+  },
+  {
+    "source": "OCPU 与内存联动：每 OCPU 最多 {0} GB",
+    "de": "OCPU und RAM sind gekoppelt: maximal {0} GB pro OCPU",
+    "en": "OCPU and RAM are linked: maximum {0} GB per OCPU"
+  },
+  {
+    "source": "账号块存储剩余 {0} GB",
+    "de": "Noch {0} GB Blockspeicher verfügbar",
+    "en": "{0} GB of block storage remaining"
+  },
+  {
+    "source": "已按 {0} 过滤，ARM 与 x86 镜像不通用",
+    "de": "Nach {0} gefiltert; ARM- und x86-Images sind nicht austauschbar",
+    "en": "Filtered by {0}; ARM and x86 images are not interchangeable"
+  },
+  {
+    "source": "{0} 秒偏激进。高频调用创建接口易触发 429 限流（该账号全部任务会自动降速），严重时账号被标记。",
+    "de": "{0} Sekunden sind sehr aggressiv. Häufige Erstellungsanfragen können API-Limit 429 auslösen (alle Aufträge dieses Kontos werden verlangsamt); im schlimmsten Fall wird das Konto markiert.",
+    "en": "{0} seconds is aggressive. Frequent create requests can trigger 429 rate limiting (all jobs for the account slow down), or account flagging."
+  },
+  {
+    "source": "{0} 小时 ≈ {1} · ",
+    "de": "{0} Stunden ≈ {1} · ",
+    "en": "{0} hours ≈ {1} · "
+  },
+  {
+    "source": "容量守候 · 每 {0} 秒 · {1}后到期",
+    "de": "Capacity Hunter · alle {0} Sekunden · Ablauf nach {1}",
+    "en": "Capacity Hunter · every {0} seconds · expires after {1}"
+  },
+  {
+    "source": "滑块联动：每 OCPU 最多 {0} GB",
+    "de": "Schieberegler gekoppelt: maximal {0} GB je OCPU",
+    "en": "Linked sliders: maximum {0} GB per OCPU"
+  },
+  {
+    "source": "{0}（创建至今，未观测到本次开机）",
+    "de": "{0} (seit Erstellung; aktueller Start nicht erfasst)",
+    "en": "{0} (since creation; current boot not observed)"
+  },
+  {
+    "source": "移除 {0} 的 IPv6",
+    "de": "IPv6 von {0} entfernen",
+    "en": "Remove IPv6 from {0}"
+  },
+  {
+    "source": "删除 {0} 后这个地址不可找回，正在用它的连接会中断，指向它的 DNS 记录需要手动更新。",
+    "de": "Nach dem Löschen von {0} ist die Adresse verloren. Bestehende Verbindungen brechen ab, DNS-Einträge müssen manuell angepasst werden.",
+    "en": "After deleting {0}, the address is lost. Existing connections will disconnect; DNS records must be updated manually."
+  },
+  {
+    "source": "更换后原 IP {0} 不可找回，当前 SSH 连接将中断，DNS 记录需要手动更新。附属网卡的 IP 不受影响。",
+    "de": "Die alte IP {0} ist nach dem Wechsel verloren. SSH-Verbindungen brechen ab; DNS muss angepasst werden. IPs zusätzlicher VNICs bleiben bestehen.",
+    "en": "The old IP {0} cannot be recovered after replacement. SSH sessions disconnect; DNS must be updated. Secondary VNIC IPs are unaffected."
+  },
+  {
+    "source": "分离附属网卡 {0}",
+    "de": "Zusätzliche Netzwerkkarte {0} trennen",
+    "en": "Detach secondary VNIC {0}"
+  },
+  {
+    "source": "这张网卡上的公网 IP {0} 会被释放，不可找回。",
+    "de": "Die öffentliche IP {0} dieser Netzwerkkarte wird freigegeben und ist unwiederbringlich.",
+    "en": "Public IP {0} on this VNIC will be released and cannot be recovered."
+  },
+  {
+    "source": "为 {0} 开启 IPv6",
+    "de": "IPv6 für {0} aktivieren",
+    "en": "Enable IPv6 for {0}"
+  },
+  {
+    "source": "{0} 已分配 IPv6",
+    "de": "IPv6 für {0} zugewiesen",
+    "en": "IPv6 assigned to {0}"
+  },
+  {
+    "source": "每 {0} {1}一个点",
+    "de": "Alle {0} {1} ein Messpunkt",
+    "en": "One data point every {0} {1}"
+  },
+  {
+    "source": "最近 {0} 小时",
+    "de": "Letzte {0} Stunden",
+    "en": "Last {0} hours"
+  },
+  {
+    "source": "最近 {0} 天",
+    "de": "Letzte {0} Tage",
+    "en": "Last {0} days"
+  },
+  {
+    "source": "分离 {0} 的引导卷",
+    "de": "Boot-Volume von {0} trennen",
+    "en": "Detach boot volume from {0}"
+  },
+  {
+    "source": "{0} 的引导卷",
+    "de": "Boot-Volume von {0}",
+    "en": "Boot volume of {0}"
+  },
+  {
+    "source": "把 {0} 的系统盘挂到 {1}",
+    "de": "Systemlaufwerk von {0} an {1} anschließen",
+    "en": "Attach {0}'s system disk to {1}"
+  },
+  {
+    "source": "挂上去之后登录 {0}，用 lsblk 找到新增的设备（通常是 /dev/sdb），",
+    "de": "Anschließend bei {0} anmelden und mit lsblk das neue Gerät suchen (meist /dev/sdb),",
+    "en": "Then log in to {0} and use lsblk to locate the new device (usually /dev/sdb),"
+  },
+  {
+    "source": "分离 {0}",
+    "de": "{0} trennen",
+    "en": "Detach {0}"
+  },
+  {
+    "source": "把引导卷挂回 {0}",
+    "de": "Boot-Volume wieder an {0} anschließen",
+    "en": "Reattach boot volume to {0}"
+  },
+  {
+    "source": "引导卷（{0} GB）",
+    "de": "Boot-Volume ({0} GB)",
+    "en": "Boot volume ({0} GB)"
+  },
+  {
+    "source": "主网卡 · {0}",
+    "de": "Primäre VNIC · {0}",
+    "en": "Primary VNIC · {0}"
+  },
+  {
+    "source": "附属网卡 · {0}",
+    "de": "Zusätzliche VNIC · {0}",
+    "en": "Secondary VNIC · {0}"
+  },
+  {
+    "source": "已用 {0} / {1} 张（含主网卡）",
+    "de": "{0} / {1} genutzt (inkl. primärer VNIC)",
+    "en": "{0} / {1} used (including primary VNIC)"
+  },
+  {
+    "source": "可挂载到 {0} 台同可用域（{1}）的运行中实例。",
+    "de": "Kann an {0} laufende Instanzen derselben Availability Domain ({1}) angeschlossen werden.",
+    "en": "Can be attached to {0} running instances in the same availability domain ({1})."
+  },
+  {
+    "source": "{0} 的 {1} 里没有其它运行中的实例。卷不能跨可用域挂载——",
+    "de": "In {1} von {0} gibt es keine weitere laufende Instanz. Volumes können nicht zwischen Availability Domains angeschlossen werden –",
+    "en": "No other running instance in {0}'s {1}. Volumes cannot be attached across availability domains —"
+  },
+  {
+    "source": "{0} 里没有读到任何引导卷。分离后的卷仍会留在原可用域，",
+    "de": "In {0} wurden keine Boot-Volumes gefunden. Getrennte Volumes bleiben in ihrer ursprünglichen Availability Domain,",
+    "en": "No boot volumes found in {0}. Detached volumes remain in their original availability domain,"
+  },
+  {
+    "source": "{0} · 单位随数值自动切换",
+    "de": "{0} · Einheit passt sich dem Wert automatisch an",
+    "en": "{0} · Unit scales automatically"
+  },
+  {
+    "source": "{0} · 纵轴固定 0–100%",
+    "de": "{0} · Y-Achse fest auf 0–100 %",
+    "en": "{0} · Y-axis fixed at 0–100%"
+  },
+  {
+    "source": "{0}（UTC）· {1} 块网卡 · 不受时间范围影响",
+    "de": "{0} (UTC) · {1} VNICs · unabhängig vom Zeitraum",
+    "en": "{0} (UTC) · {1} VNICs · unaffected by time range"
+  }
+]

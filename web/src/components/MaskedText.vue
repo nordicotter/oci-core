@@ -51,7 +51,7 @@ async function onCopy() {
 
 <template>
   <span class="mk">
-    <span class="mk__v" :class="{ 'is-hidden': hidden }">{{ shown }}</span>
+    <span class="mk__v" data-no-translate :class="{ 'is-hidden': hidden }">{{ shown }}</span>
 
     <button v-if="maskable && state.privacyMode" class="mk__btn"
             :title="revealed ? '重新打码' : '显示原文'"

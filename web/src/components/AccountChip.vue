@@ -20,9 +20,9 @@ const tooltip = computed(() =>
 <template>
   <span class="chip" :class="`chip--${variant}`" :title="tooltip" :style="{ '--c': color }">
     <span class="chip__dot" />
-    <span v-if="variant !== 'dot'" class="chip__code mono">{{ account.code }}</span>
+    <span v-if="variant !== 'dot'" class="chip__code mono" data-no-translate>{{ account.code }}</span>
     <span v-if="abnormal" class="chip__warn" aria-label="账号异常">⚠</span>
-    <span v-if="variant === 'full'" class="chip__alias">{{ account.alias }}</span>
+    <span v-if="variant === 'full'" class="chip__alias" data-no-translate>{{ account.alias }}</span>
   </span>
 </template>
 

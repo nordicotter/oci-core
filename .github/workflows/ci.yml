@@ -81,6 +81,10 @@ jobs:
         working-directory: web
         run: npm ci
 
+      - name: Übersetzungskatalog prüfen
+        working-directory: web
+        run: npm run test:i18n
+
       - name: vue-tsc
         working-directory: web
         run: npm run typecheck

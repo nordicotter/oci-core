@@ -4,6 +4,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { useStore } from '@/store'
 import { acctColor } from '@/lib/format'
 import AccountChip from './AccountChip.vue'
+import LanguageSwitcher from './LanguageSwitcher.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -106,7 +107,7 @@ async function doLogout() {
       <span>台正在转换</span>
     </button>
 
-    <span class="top__sep" />
+    <LanguageSwitcher />
 
     <span class="top__sep" />
 
@@ -116,7 +117,7 @@ async function doLogout() {
       </button>
       <div v-if="userOpen" class="top__scrim" @click="userOpen = false" />
       <div v-if="userOpen" class="top__pop top__pop--user">
-        <p class="top__user">{{ state.username || '未登录' }}</p>
+        <p class="top__user" data-no-translate>{{ state.username || '未登录' }}</p>
         <hr />
         <button class="top__pop-row" @click="userOpen = false; router.push('/settings')">设置</button>
         <button class="top__pop-row" @click="doLogout()">退出登录</button>

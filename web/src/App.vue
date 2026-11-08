@@ -8,6 +8,7 @@ import ConfirmDialog from '@/components/ConfirmDialog.vue'
 import DangerTotpPrompt from '@/components/DangerTotpPrompt.vue'
 import ToastHost from '@/components/ToastHost.vue'
 import DrawerHost from '@/components/DrawerHost.vue'
+import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 
 /** 演示站的顶部提示。正常构建里 VITE_DEMO 是常量 false，这个组件不会被打包。 */
 const DemoBanner = import.meta.env.VITE_DEMO === 'true'
@@ -20,6 +21,7 @@ const bare = computed(() => route.meta.bare === true)
 
 <template>
   <template v-if="bare">
+    <div class="login-language"><LanguageSwitcher /></div>
     <component :is="DemoBanner" v-if="DemoBanner" />
     <RouterView />
   </template>
@@ -46,6 +48,7 @@ const bare = computed(() => route.meta.bare === true)
 </template>
 
 <style scoped>
+.login-language { position: fixed; right: 16px; top: 16px; z-index: 1000; }
 .shell { display: flex; height: 100%; overflow: hidden; }
 .shell__main { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; }
 .shell__content { flex: 1 1 auto; overflow-y: auto; overflow-x: hidden; }

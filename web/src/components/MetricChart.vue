@@ -17,6 +17,9 @@ import { LineChart, BarChart } from 'echarts/charts'
 import { GridComponent, TooltipComponent, LegendComponent } from 'echarts/components'
 import { CanvasRenderer } from 'echarts/renderers'
 import type { EChartsCoreOption } from 'echarts/core'
+import { language, translate } from '@/i18n'
+
+const localeForDate = () => language.value === 'de' ? 'de-DE' : language.value === 'en' ? 'en-GB' : 'zh-CN'
 
 echarts.use([LineChart, BarChart, GridComponent, TooltipComponent, LegendComponent, CanvasRenderer])
 
@@ -40,7 +43,7 @@ const props = withDefaults(defineProps<{
 }>(), {
   type: 'line',
   categories: undefined,
-  format: (v: number) => v.toLocaleString('zh-CN', { maximumFractionDigits: 2 }),
+  format: (v: number) => v.toLocaleString(localeForDate(), { maximumFractionDigits: 2 }),
   yMax: undefined,
   height: 200,
   emptyText: '暂无数据'
@@ -71,9 +74,9 @@ function cssVar(name: string): string {
 
 function timeLabel(ms: number, withDate: boolean): string {
   const d = new Date(ms)
-  const hm = d.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit', hour12: false })
+  const hm = d.toLocaleTimeString(localeForDate(), { hour: '2-digit', minute: '2-digit', hour12: false })
   if (!withDate) return hm
-  return `${d.getMonth() + 1}/${d.getDate()} ${hm}`
+  return `${d.toLocaleDateString(localeForDate(), { day: '2-digit', month: '2-digit' })} ${hm}`
 }
 
 function buildOption(): EChartsCoreOption {
@@ -125,7 +128,7 @@ function buildOption(): EChartsCoreOption {
         const list = Array.isArray(params) ? params : [params]
         if (!list.length) return ''
         const head = isCategory
-          ? String(list[0].axisValueLabel ?? list[0].name)
+          ? translate(String(list[0].axisValueLabel ?? list[0].name))
           : timeLabel(Number(list[0].axisValue), true)
         // 值在前、标签在后；文字用正文色，只有小色块带序列身份。
         const rows = list.map((p: any) => {
@@ -141,7 +144,7 @@ function buildOption(): EChartsCoreOption {
     xAxis: isCategory
       ? {
           type: 'category',
-          data: props.categories,
+          data: props.categories?.map(translate),
           axisLine: { lineStyle: { color: borderDefault } },
           axisTick: { show: false },
           axisLabel: { color: textTertiary, fontSize: 11, fontFamily: mono, hideOverlap: true }
@@ -168,7 +171,7 @@ function buildOption(): EChartsCoreOption {
     },
     series: props.series.map((s, i) => props.type === 'bar'
       ? {
-          name: s.name,
+          name: translate(s.name),
           type: 'bar',
           data: s.data,
           barMaxWidth: 14,
@@ -176,7 +179,7 @@ function buildOption(): EChartsCoreOption {
           itemStyle: { borderRadius: [3, 3, 0, 0] }
         }
       : {
-          name: s.name,
+          name: translate(s.name),
           type: 'line',
           data: s.data,
           showSymbol: false,
@@ -213,6 +216,8 @@ watch(() => [props.series, props.categories, props.yMax], () => {
   // 从空态切回有数据时，容器是新挂上的，要重新 init。
   requestAnimationFrame(render)
 }, { deep: true })
+
+watch(language, () => requestAnimationFrame(render))
 
 onBeforeUnmount(() => {
   resizeObs?.disconnect()

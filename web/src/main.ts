@@ -4,6 +4,7 @@ import router from './router'
 import { useStore } from './store'
 import { AUTH_REQUIRED_EVENT } from './api'
 import './styles/base.css'
+import { installTranslationObserver } from './i18n'
 
 const app = createApp(App)
 
@@ -23,3 +24,4 @@ window.addEventListener(AUTH_REQUIRED_EVENT, () => {
 })
 
 app.use(router).mount('#app')
+installTranslationObserver()

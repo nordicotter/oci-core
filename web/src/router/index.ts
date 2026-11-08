@@ -1,5 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import { useStore } from '@/store'
+import { watch } from 'vue'
+import { language, translate } from '@/i18n'
 
 /** hash 路由：Go 单二进制内嵌静态资源时无需服务端 rewrite */
 const router = createRouter({
@@ -56,9 +58,12 @@ router.beforeEach(async (to) => {
   return { name: 'login' }
 })
 
-router.afterEach((to) => {
-  const title = (to.meta.title as string) ?? ''
-  document.title = title ? `${title} · OCI Core` : 'OCI Core'
-})
+function updatePageTitle(): void {
+  const title = (router.currentRoute.value.meta.title as string) ?? ''
+  document.title = title ? `${translate(title)} · OCI Core` : 'OCI Core'
+}
+
+router.afterEach(updatePageTitle)
+watch(language, updatePageTitle)
 
 export default router

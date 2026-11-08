@@ -8,7 +8,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit",
-    "build:demo": "vue-tsc --noEmit && vite build --mode demo --outDir dist-demo --emptyOutDir"
+    "build:demo": "vue-tsc --noEmit && vite build --mode demo --outDir dist-demo --emptyOutDir",
+    "test:i18n": "node scripts/check-i18n.mjs"
   },
   "dependencies": {
     "echarts": "5.6.0",

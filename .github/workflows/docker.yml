@@ -54,13 +54,16 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: GHCR-Pfad in Kleinbuchstaben setzen
+        run: echo "IMAGE=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_ENV"
+
       - name: 计算镜像标签
         id: meta
         uses: docker/metadata-action@v5
         with:
           # github.repository 是 jsongmax/oci-core，本身就是小写——
           # GHCR 只接受小写路径，仓库名一旦带大写字母这里要另行转换。
-          images: ghcr.io/${{ github.repository }}
+          images: ${{ env.IMAGE }}
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
